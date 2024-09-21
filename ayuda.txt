@@ -1,0 +1,18 @@
+#SERVIDOR
+Para iniciar el servidor, desde el CMD ejecutar:
+
+cd C:\OneDrive geynermb@outlook\OneDrive\personal_geyner\apps_python\mi_proyecto
+.\venv\Scripts\activate
+python manage.py runserver
+
+#STATIC
+La carpeta static en un proyecto Django se utiliza para almacenar archivos estáticos que son necesarios para la presentación de la aplicación web. Esto incluye:
+
+1. Archivos CSS
+Estilos de la página web que determinan la apariencia visual.
+2. Archivos JavaScript
+Scripts que añaden interactividad a la aplicación, como efectos en la interfaz o manejo de eventos.
+3. Imágenes
+Gráficos, iconos y otras imágenes que se utilizan en la interfaz de usuario.
+4. Fuentes
+Archivos de fuentes personalizados que se utilizan en el diseño.

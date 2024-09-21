@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, sans-serif;
+    color:white;
+    background-image: url('../images/fondo01.png'); /* Ajusta la ruta según la ubicación de tu imagen */
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    *margin: 0; /* Elimina márgenes por defecto */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.login-container {
+    width: 300px;
+    position: center;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(181, 16, 16, 0.1);
+    border-radius: 8px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    border: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: green;
+}
