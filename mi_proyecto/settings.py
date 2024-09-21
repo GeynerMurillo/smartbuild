@@ -104,13 +104,20 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGE_CODE = 'es'  # o 'en-us' si deseas que el predeterminado sea inglés
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
+
+LANGUAGES = [
+    ('es', _('Spanish')),
+    ('en', _('English')),
+]
 
 
 # Static files (CSS, JavaScript, Images)
@@ -124,6 +131,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Custom settings
-LOGIN_URL = 'login'  # Nombre de la vista de inicio de sesión
+LOGIN_URL = 'registro'  # Nombre de la vista de inicio de sesión
 LOGIN_REDIRECT_URL = 'home'  # URL a la que se redirige después del inicio de sesión
-LOGOUT_REDIRECT_URL = 'login'  # URL a la que se redirige después del cierre de sesión
+LOGOUT_REDIRECT_URL = 'bienvenido'  # URL a la que se redirige después del cierre de sesión

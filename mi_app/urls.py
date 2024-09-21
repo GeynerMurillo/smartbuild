@@ -1,7 +1,12 @@
 from django.urls import path
-from . import views
+from django.contrib import admin
+from django.contrib.auth import views as auth_views
+from .views import CustomLoginView, registro
+from .views import bienvenido
 
 urlpatterns = [
-    path('', views.home, name='home'),  # Página principal, accesible solo para usuarios autenticados
-    path('login/', views.CustomLoginView.as_view(), name='login'),  # Página de inicio de sesión
+    path('admin/', admin.site.urls),
+    path('registro/', CustomLoginView.as_view(), name='registro'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('bienvenido/', bienvenido, name='bienvenido'),
 ]
